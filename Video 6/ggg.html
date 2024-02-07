@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to apply in ZEMR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Contact Sales</h1>
+    <form action="post">
+        <div>
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="industry">Your Industry?</label>
+            <select id="industry" name="industry">
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Construction">Construction</option>
+                <option value="Mining">Mining</option>
+            </select>
+        </div>
+        <div>
+            <label for="service">What service are you interested in*?</label>
+            <select id="service" name="service">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div>
+            <label>Would you like a video demo?</label>
+            <br>
+            <input type="radio" id="yes" name="video_demo" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="video_demo" value="no">
+            <label for="no">No</label>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
