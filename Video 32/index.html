@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> More on  CSS Selectors</title>
+    <title> More on CSS Selectors</title>
     <style>
         /* .box:first-child{
             background-color: cornflowerblue;
@@ -11,20 +12,52 @@
         /* .box:first-line{
 color:yellowgreen;
         } */
-        .boxes *{
+        /* .boxes *{
             color: blue;
             border:2px solid black;
         }
    p,a,.box [data-color="primary"]{
          margin-top: 34px;
+    } */
+        /* .box:nth-child(even){
+        background-color: brown;
+    } */
+        /* .box:nth-last-child(2){
+        background-color: lightpink;
+    } */
+        /* ::selection{
+        color: aqua;
+        background-color: chartreuse;
     }
+    .box::first-letter{
+        color: indigo;
+        font-size: 45px;
+    } */
+
+
+
+        /* .boxes::before{
+       content:"GOOD"; 
+       color: deeppink;
+    }
+    .boxes::after{
+        content: "BAD";
+        color: rgba(30, 5, 32, 0.294); 
+    } */
+        input:placeholder {
+            color: blue;
+            font-size: 10px;
+        }
     </style>
 </head>
+
 <body>
     <div class="boxes">
         <div data-color="primary" class="box">Box</div>
         <div class="box">Hey I am Box</div>
         <div class="box">Hey I am Box</div>
+        <input type="text" placeholder="type your name">
     </div>
 </body>
+
 </html>
