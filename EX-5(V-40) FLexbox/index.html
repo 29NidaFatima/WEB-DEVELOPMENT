@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
         .item1 {
-            background-color: yellow;
+            background-color: rgb(196, 196, 28);
             width: 65px;
             height: 34px;
             margin-right: 0px;
@@ -15,24 +21,29 @@
             font-size: xx-large;
             font-weight: 900;
             font-style: italic;
-            border-radius: 8px;
+            border-radius: 100px;
             text-align: center;
             padding: 7px 7px 7px 7px;
+            gap right: 0;
 
         }
 
         .iteem {
-            background-color: white;
-            margin-left: 0px;
-            font-weight: 800;
-            margin-left: 0px;
+           
+           
+            font-weight: 900;
+            font-style: oblique;
+          
 
         }
 
         nav {
+            background-color: rgb(136, 136, 225);
             display: flex;
             justify-content: space-around;
             align-items: center;
+            height: 105px;
+            color: white;
         }
 
         ul li {
@@ -45,15 +56,20 @@
             display: flex;
             gap: 39px;
         }
+        .maintain{
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-
+<div class="maintain">
             <div class="item1">UE</div>
             <div class="iteem">UltraEdit</div>
+        </div>
             <div class="item2">
                 <ul>
                     <li>Product <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 24 24"
