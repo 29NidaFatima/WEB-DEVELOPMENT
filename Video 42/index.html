@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforn</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid saddlebrown;
+           
+        }
+        .box{
+           height: 50px; 
+           width: 50px;
+           background-color: beige;
+           border: 2px dotted blueviolet;
+        /* ROTATE */
+           /* transform: rotate(40deg); */
+           /* transform: rotate(0.25turn); */
+           /* transform: rotateX(40deg); */
+           /* SCALE */
+           /* transform: scaleX(1.5); */
+           /* SKEW */
+           /* transform: skewY(35deg); */
+           /* TRANSLATE */
+           /* transform: translate(100%); */
+           /* transform: translateY(100%); */
+           /* when we want to apply more than one property */
+           transform: translate(100%) skew(40deg) translateX(45%);
+           display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">lets rotate BOX</div>
+    </div>
+</body>
+</html>
