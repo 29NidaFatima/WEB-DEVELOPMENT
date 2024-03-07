@@ -1,68 +1,102 @@
-*{
-        margin: 0;
-        padding: 0;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap') 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
 
-    .main {
-        background-image: url("assets/images/bg.jpg");
-        height: 70vh;
-        position: relative;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: max(1200px, 100vw);
+body {
+    background-color: black;
+}
 
-    }
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
 
-    body {
-        background-color: black;
-    }
+}
 
-    .main .box {
-        height: 70vh;
-        width: 100%;
-        opacity: 0.44;
+
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: poppins;
+    font-weight: bolder;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    
+        content: '';
         position: absolute;
         top: 0;
-        background-color: black;
-    }
-
-    nav {
-        max-width: 60vw;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 62px;
-    }
-
-    nav img {
-        color: red;
-        width: 114px;
-        position: relative;
-        z-index: 10;
-    }
-
-    nav button {
-        position: relative;
-        z-index: 10;
-    }
-
-    .hero {
-        font-family: "Poppins", sans-serif;
-        height: 100%;
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: white;
-        position: relative;
-gap: 23px;
-padding: 30px;
-text-align: center;
-    }
-
-    .hero:first-child {
-        font-weight: 900;
-        font-size: 24px;
-    }
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin-top: -0.25rem;
+        border-radius: inherit;
+        background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+      
+    
+    
+}
