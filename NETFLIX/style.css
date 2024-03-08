@@ -1,30 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap') 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
 
 body {
     background-color: black;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
 .main {
     background-image: url("assets/images/bg.jpg");
-    height: 70vh;
-    position: relative;
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
 
 }
 
-
-
 .main .box {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.68;
     position: absolute;
     top: 0;
     background-color: black;
@@ -32,18 +31,20 @@ body {
 
 nav {
     max-width: 60vw;
+    justify-content: space-between;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 62px;
+
 }
 
 nav img {
     color: red;
-    width: 114px;
+    width: 116px;
     position: relative;
     z-index: 10;
+
 }
 
 nav button {
@@ -52,51 +53,89 @@ nav button {
 }
 
 .hero {
-    font-family: "Martel Sans", sans-serif;
-    height:100% ;
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     position: relative;
-    gap: 23px;
-
+    gap: 15px;
     padding: 0 30px;
+
 }
 
 .hero> :nth-child(1) {
-    font-family: poppins;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 56px;
     text-align: center;
 }
 
-.hero:nth-child(2) {
-    font-weight: 400;
-    font-size: 24px;
+.hero> :nth-child(2) {
+    font-weight: 900;
+    font-size: 56px;
     text-align: center;
 }
 
-.hero:nth-child(3) {
-    font-weight: 400;
+.hero> :nth-child(3) {
+    font-weight: 600;
     font-size: 20px;
     text-align: center;
 }
 
-.separation {
-    
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin-top: -0.25rem;
-        border-radius: inherit;
-        background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
-      
-    
-    
+.hero> :nth-child(4) {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+.seperation {
+    height: 10px;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -0.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgb(222, 197, 197);
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 16px 140px 16px 30px;
+    font-weight: 900;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(238, 238, 238, 0.5);
 }
