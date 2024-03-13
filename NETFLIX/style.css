@@ -15,15 +15,15 @@ body {
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 80vh;
     position: relative;
 
 }
 
-.main .box {
-    height: 70vh;
+main .box {
+    height: 80vh;
     width: 100%;
-    opacity: 0.68;
+    opacity: 0;
     position: absolute;
     top: 0;
     background-color: black;
@@ -46,10 +46,12 @@ nav img {
     z-index: 10;
 
 }
+
 nav button {
     position: relative;
     z-index: 10;
 }
+
 .hero {
     font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 62px);
@@ -63,11 +65,13 @@ nav button {
     padding: 0 30px;
 
 }
+
 .hero> :nth-child(1) {
     font-weight: 900;
     font-size: 56px;
     text-align: center;
 }
+
 .hero> :nth-child(2) {
     font-weight: 900;
     font-size: 56px;
@@ -79,11 +83,13 @@ nav button {
     font-size: 20px;
     text-align: center;
 }
+
 .hero> :nth-child(4) {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
 }
+
 .seperation {
     height: 10px;
     content: '';
@@ -96,6 +102,7 @@ nav button {
     border-radius: inherit;
     background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
 }
+
 .btn {
     padding: 3px 8px;
     font-weight: bold;
@@ -130,35 +137,27 @@ nav button {
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(238, 238, 238, 0.5);
 }
-.first div h2{
+
+.first {
     color: white;
-    margin-top: 80px;
-    margin-left: 200px;
-    
-        position: relative;
-        width: 100%;
-    
+    padding: 36px 33px 17px 76px;
+    margin-left: -55px;
 }
-.box{
-    height: 55;
-    width: 55px;
-    background-color: palevioletred;
-    
-}
+
 .second {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: inherit;
-    height: inherit;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
+    display: flex;
     justify-content: center;
-    padding: 0px;
+    align-items: center;
+}
+
+.second>div {
+    background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);;
+    color: white;
+    width: 246px;
+    height: 269px;
+    margin: 10px;
+    text-align: center;
+
+    font-size: 30px;
+    border-radius: 10px;
 }
