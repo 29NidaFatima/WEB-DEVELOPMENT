@@ -1,0 +1,38 @@
+(function() {
+
+	window.Ellipsis_Tooltip = window.Ellipsis_Tooltip || {};
+
+	// register methods for desktop and mobile view
+	window.Ellipsis_Tooltip.addTooltip = addTooltip;
+	window.Ellipsis_Tooltip.hoverOut = hoverOut;
+	window.Ellipsis_Tooltip.moveToolTip = moveToolTip;
+
+	function addTooltip() {
+		var title = $(this).attr('title');
+		$(this).data('tipText', title).removeAttr('title');
+		if (isEllipsisActive(this)) {
+			$('<p class="tooltip"></p>').text(title).appendTo('body').fadeIn(
+					'slow');
+		}
+	}
+
+	function hoverOut() {
+		$(this).attr('title', $(this).data('tipText'));
+		$('.tooltip').remove();
+	}
+
+	function moveToolTip(e) {
+		var mousex = e.pageX + 20; // Get X coordinates
+		var mousey = e.pageY + 10; // Get Y coordinates
+		$('.tooltip').css({
+			top : mousey,
+			left : mousex
+		})
+	}
+
+	function isEllipsisActive(e) {
+		var $this = $(e);
+		var closestTd = $this.closest("td").get(0);
+		return (closestTd.offsetWidth < closestTd.scrollWidth);
+	}
+})();

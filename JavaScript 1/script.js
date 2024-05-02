@@ -1,18 +1,19 @@
 console.log("Tutorial 55 of JS")
-let a=5;
-let b=6;
-let c="Nida"
-//var 55a="Rohan"    Invalid Way-not Allowed
+// let a=5;
+// let b=6;
+// let c="Nida"
+//var 55a="Rohan"    Invalid Way Not Allowed
 
-{ 
-    // let -->BLOCK SCOPE
-    let b=66;
+// { 
+//     // let -->BLOCK SCOPE
+//     let b=66;
 
-    console.log(b)
-}
-console.log(b)
+//     console.log(b)
+// }
+// console.log(b)
 
 // console.log(a+b+8)
+//-----how to check the type of any variable
 // console.log(typeof a,typeof b, typeof c)
 
 // const a1=29; //value cannot change if once assign in const
@@ -29,7 +30,7 @@ console.log(typeof x,typeof y,typeof z,typeof p,typeof q,typeof r)
 let o={
     "name": "Nida",
     "job code": 5600, 
-    "is_handsome":True
+    "is_handsome":true
 }
 console.log(o)
 o.salary="100crores"

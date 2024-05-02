@@ -1,0 +1,50 @@
+/**
+ * method convert standard date with timezone to isoformat which is not damaged
+ * by timezone (e.g 23.2.2012 00:00:00) will be transformad to ISO format
+ * (2015-02-23T00:00:00.000Z)
+ */
+function createIsoDateWithoutSpecifiedTimezone(date) {
+	var userOffset = date.getTimezoneOffset();
+	userOffset = userOffset * 60000;
+	var newDate = moment(new Date(date.getTime() - userOffset));
+	var isoDateString = newDate.toISOString();
+	return isoDateString;
+}
+
+/**
+ * safe replace all implementation according
+ * http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
+ * 
+ * @param source
+ * @param stringToFind
+ * @param stringToReplace
+ * @returns
+ */
+function replaceAll(source, stringToFind, stringToReplace) {
+	return source.replace(new RegExp(escapeRegExp(stringToFind), 'g'), stringToReplace);
+}
+
+/**
+ * escape regular expression string according
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Using_Special_Characters
+ * 
+ * @param string
+ * @returns
+ */
+function escapeRegExp(string) {
+	return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
+
+/**
+ * method returns DatePicker date format in upper case format
+ * 
+ * @param $datepickerInput
+ * @returns
+ */
+function getDateFormatFromDatePicker($datepickerInput) {
+	var dateFormat = $datepickerInput.datepicker('option', 'dateFormat');
+	// datepicker has different date format one y means two year numbers e.g. yy
+	// = 2015, y = 15
+	dateFormat = replaceAll(dateFormat, 'y', 'yy').toUpperCase();
+	return dateFormat;
+}
