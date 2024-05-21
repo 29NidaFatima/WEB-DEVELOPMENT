@@ -9,13 +9,12 @@ const f=13;
 const g= 1;
 console.log(f+g)
 //Q5
-let meanings of words={
+const dictionary ={
     "congregation":"gathering",
-    "sacred":"connected with god"
+    "sacred":"connected with god",
     "adhere":"to stick firmly to something"
 }
+console.log(dictionary)
 //Q2
-
-
-console.log(typeof meanings of words)
+console.log(typeof meaningsofwords)
 
