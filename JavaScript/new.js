@@ -1,5 +1,5 @@
 console.log("Hello World")
 console.log("code is running...")
 console.log("code is also running...")
-console.log("code is looking likeee wow...")
+console.log("code is looking likeee wowww...")
 console.log("NIDA FATIMA")
