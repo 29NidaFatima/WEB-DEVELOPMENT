@@ -1,4 +1,4 @@
-console.log("Tutorial 55 of JS")
+console.log("JS")
 // let a=5;
 // let b=6;
 // let c="Nida";
