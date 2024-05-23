@@ -1,4 +1,4 @@
-console.log("Loops")
+// console.log("Loops")
 // let a=1;
 // console.log(a)
 // console.log(a+1)
@@ -36,21 +36,38 @@ console.log("Loops")
 // } while (i<6);
 // ------Practice Question------
 // Q2
-// let obj={
+// let marks={
 //    harry: "98",
 //    rohan:"70",
 //    aakash:"7"
 // }
-// for (const key in obj) {
+// for (const key in marks) {
 
-//       const element = obj[key];
+//       const element = marks[key];
 //       console.log(key,element)
    
 // }
 // Q4
-function mean(p,q,r,s,t){
-    console.log(p,q,r,s,t)
-    return (p+q+r+s+t)/5
+function mean(p,q,r,s){   
+    return (p+q+r+s)/5
 }
- result=mean(2,4,6,8,10);
+ result=mean(2,4,6,8);
  console.log("Mean is:"+ result)
+//  Q1
+// let marks={
+//    harry: "98",
+//    rohan:"70",
+//    aakash:"7"
+// }
+// for(let i=0; i<Object.keys(marks).length;i++){
+//    console.log("Marks of " + Object.keys(marks)[i]+ " are "+ marks[Object.keys(marks)[i]])
+// }
+// Q3
+// let cn=4;
+// let i;
+// while(i!=cn){
+//    console.log("Try Again")
+//    i=prompt("Enter a number")
+// }
+// console.log("completed")
+
