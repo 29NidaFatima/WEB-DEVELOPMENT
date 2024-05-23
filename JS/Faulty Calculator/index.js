@@ -1,24 +1,24 @@
-function faultyCalculator(operator,Number1,Number2){
-    switch (operator){
+function faultyCalculator(operator, Number1, Number2) {
+    switch (operator) {
         case '+':
-      
-            console.log(Number1-Number1)
+            console.log(Number1 - Number2);
             break;
-            case '*':
-               
-                console.log(Number1+Number1)
-                break;
-                case '-':
-                 
-                    console.log(Number1/Number1)
-                    break;
-                    case '/':
-                      
-                        console.log(Number1**Number1)
-                        break;
+        case '*':
+            console.log(Number1 + Number2);
+            break;
+        case '-':
+            console.log(Number1 / Number2);
+            break;
+        case '/':
+            console.log(Number1 ** Number2);
+            break;
         default:
-          return "invalid operator"
-            break;
+            return "invalid operator";
     }
 }
-faultyCalculator('+',4,2);
+
+faultyCalculator('+', 4, 2);  
+faultyCalculator('*', 4, 2);  
+faultyCalculator('-', 4, 2);  
+faultyCalculator('/', 4, 2);  
+
