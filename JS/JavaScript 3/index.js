@@ -7,7 +7,7 @@
 // console.log(a+4)
 // ------for loop-----
 // for (let i = 0; i < 100; i++) {
-  
+
 //     console.log(a+i);
 // }
 // let obj={
@@ -19,7 +19,7 @@
 
 //         // const element = obj[key]; 
 //         console.log( key)
-        
+
 //     }
 //     for (const char of "Nida") {
 //         console.log(char)
@@ -36,23 +36,23 @@
 // } while (i<6);
 // ------Practice Question------
 // Q2
-// let marks={
-//    harry: "98",
-//    rohan:"70",
-//    aakash:"7"
-// }
-// for (const key in marks) {
-
-//       const element = marks[key];
-//       console.log(key,element)
-   
-// }
-// Q4
-function mean(p,q,r,s){   
-    return (p+q+r+s)/5
+let marks={
+   harry: "98",
+   rohan:"70",
+   aakash:"7"
 }
- result=mean(2,4,6,8);
- console.log("Mean is:"+ result)
+for (const key in marks) {
+
+      const element = marks[key];
+      console.log(key,element)
+
+}
+// Q4
+// function mean(p, q, r, s) {
+//     return (p + q + r + s) / 5
+// }
+// result = mean(2, 4, 6, 8);
+// console.log("Mean is:" + result)
 //  Q1
 // let marks={
 //    harry: "98",
