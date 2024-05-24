@@ -8,3 +8,5 @@ arr[2]=23;
 // console.log(arr[2])
 console.log(arr.toString())
 console.log(arr.join(" and "))
+
+
