@@ -16,7 +16,7 @@ let a=[1,9,5,6,88];
 // for (const key in object) {
 //     if (Object.hasOwnProperty.call(object, key)) {
 //         const element = object[key];
-//         console.log( key,element)
+//         console.log( element)
 //     }
 // }
 for (const iterator of a) {
