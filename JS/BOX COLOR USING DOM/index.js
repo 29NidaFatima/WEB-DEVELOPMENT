@@ -1,5 +1,6 @@
 let boxes= document.body.getElementsByClassName("box");
 console.log(boxes)
+
 boxes[0].style.color="pink"
 boxes[1].style.color="yellow"
 boxes[2].style.color="green"
