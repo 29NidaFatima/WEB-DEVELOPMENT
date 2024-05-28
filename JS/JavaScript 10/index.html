@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" data-createrby="Nida" data-conceptby="Fatima">Hey I am a Box</div>
+    </div>
+    <script>
+        // let div =document.createElement("div")
+        // div.innerHTML="i have been inserted <b> by harry </b>"
+        //     div.setAttribute("class","created")
+        //     document.querySelector(".container").append(div)
+        let cont=document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin","<b>i m under the water.here please help me </b>")
+    </script>
+</body>
+</html>
