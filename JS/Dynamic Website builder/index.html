@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card {
+            display: flex;
+            border: 2px solid black;
+            width: 900px;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img {
+            width: 200px;
+        }
+        .text h1,
+        p {
+            padding: 2px 0;
+        }
+        .capsule {
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
+            left: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+            <img src="imagee.webp">
+            </div>
+            <div class="capsule">31:20</div>
+            <div class="text">
+            <h1>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</h1>
+            <p>CodeWithHarry . 1.7M views. 8months ago</p>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
