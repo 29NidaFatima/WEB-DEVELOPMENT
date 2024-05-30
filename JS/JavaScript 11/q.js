@@ -39,6 +39,6 @@
 //   console.log(await fetchContent(url));
 // }, 3000);
 // Q5
-setInterval(async function(){
-  document.querySelector("#bulb").classList.toggle("bulb")
-}, 3000)
+// setInterval(async function(){
+//   document.querySelector("#bulb").classList.toggle("bulb")
+// }, 3000)
