@@ -1,4 +1,4 @@
-//Mine Solution
+//-------My Solution---------
 // let boxes= document.body.getElementsByClassName("box");
 // console.log(boxes)
 
@@ -12,7 +12,7 @@
 // boxes[2].style.backgroundColor="red"
 // boxes[3].style.backgroundColor="pink"
 // boxes[4].style.backgroundColor="black"
-// -----------video solution-----------
+// -----------video's solution-----------
 console.log("script is initializing");
 
  let a = console.dir("Nida")
