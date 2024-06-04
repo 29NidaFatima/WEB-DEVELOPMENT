@@ -1,3 +1,4 @@
+// ----------PROTOTYPE-------------
 // let obj={
 // a:1,
 // b:"Nida"
@@ -11,6 +12,7 @@
 //     jumps:true
 // }
 // rabbit._proto_=animal //set rabbit.[[Prototype]]=animal
+// --------------CLASSES & Constructor----------------
 class Animal{
 
     constructor(name){
@@ -32,6 +34,10 @@ class Lion extends Animal{
       
         console.log("object is created and he is lion...");
     }
+eats(){
+    super.eats()
+            console.log("Eating &roar");
+        }
 }
-let b=new Lion("Shera")
-console.log(b);
+let l =new Lion("Shera")
+console.log(l);
