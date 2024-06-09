@@ -46,10 +46,135 @@
 // console.log(output); // Output: [2, 4, 2, 6, 3, 3, 8]
 // 3. The Mirror Mirror:
 //    Imagine you have a string, and you need to create a new string that is a mirror image of the original. Write a function that appends the reversed version of the original string to itself.
-function mirrorImage(str) {
-    let str1= str.split('').reverse().join('');
-    let str2= str+ str1;
-    return str2;
-}
- let output=mirrorImage("hello");
- console.log(output);
+// function mirrorImage(str) {
+//     let str1= str.split('').reverse().join('');
+//     let str2= str+ str1;
+//     return str2;
+// }
+//  let output=mirrorImage("hello");
+//  console.log(output);
+
+//  4. The Password Validator:
+//    You are building a password validation feature. Create a function that checks if a given password meets the following criteria: at least 8 characters long, contains both uppercase and lowercase letters, and includes at least one digit.
+// function isValidPassword(password) {
+//     // Check the length of the password
+//     if (password.length < 8) {
+//         return "Password is invalid: must be at least 8 characters long.";
+//     }
+    
+//     // Check for both uppercase and lowercase letters
+//     let hasUpper = false;
+//     let hasLower = false;
+//     for (let char of password) {
+//         if (char >= 'A' && char <= 'Z') {
+//             hasUpper = true;
+//         }
+//         if (char >= 'a' && char <= 'z') {
+//             hasLower = true;
+//         }
+//     }
+    
+//     if (!hasUpper || !hasLower) {
+//         return "Password is invalid: must contain both uppercase and lowercase letters.";
+//     }
+    
+//     // Check for at least one digit
+//     let hasDigit = false;
+//     for (let char of password) {
+//         if (char >= '0' && char <= '9') {
+//             hasDigit = true;
+//             break;
+//         }
+//     }
+    
+//     if (!hasDigit) {
+//         return "Password is invalid: must contain at least one digit.";
+//     }
+    
+// 5. The Sum Selector:
+// You are working on a function that should sum all numbers in an array until it encounters a negative number. Write a function that performs this summation.
+// function sumUntilNegative(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         const element = arr[i];
+
+//         if (element < 0) {
+//             break; // Stop summing when a negative number is encountered
+//         } else {
+//             sum += element; // Add the current element to the sum
+//         }
+//     }
+//     return sum;
+// }
+
+// let output = sumUntilNegative([1, 2, 3, 4, -3, 4, -5, -6, 7, 8]);
+// console.log(output); // Should return 10 (1 + 2 + 3 + 4)
+// 6. The Vowel Counter:
+//    You need to create a function that counts the number of vowels in a given string. Consider both uppercase and lowercase vowels.
+//  function vowelCounter(str) {
+//      let regexVowels=/[aeiou]/gi;
+//     console.log(`Total vowels in the string is: ${str.match(regexVowels)}`);
+//     console.log(`Length of string is: ${str.match(regexVowels).length}`);
+//  }
+ 
+// vowelCounter("NidaA Fatima");
+// 8. Async Array Mapping:
+//    Write an asynchronous function that takes an array of numbers and returns a new array of Promises where each number is multiplied by 2 after a delay of 500 milliseconds.
+// let asyncArrayMapping = async function(array) {
+//     return array.map(num => {
+//       return new Promise((resolve) => {
+//         setTimeout(() => {
+//           resolve(num * 2);
+//         }, 500);
+//       });
+//     });
+//   }
+  
+//   async function main() {
+//     let b = await asyncArrayMapping([2, 3, 4, 5, 6]);
+//     const results = await Promise.all(b);
+//     console.log(results); 
+//   }
+  
+//   main();
+// 9. The Asynchronous Shopper:
+//    Imagine you are building an online shopping application. Write an asynchronous function called placeOrder that simulates placing an order and returns a promise. The promise should resolve with an order confirmation message after a random delay.
+// function getRandomDelay(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   }
+// async function placeOrder() {
+//     return new Promise((resolve) => {
+//     let delay= getRandomDelay(1000,5000)
+//       setTimeout(() => {
+//         resolve("Order confirmed");
+//       }, delay); 
+//     });
+//   }
+  
+//   async function main() {
+//     let b = await placeOrder();
+//     console.log(b);
+//   }
+  
+//   main();
+  
+// 10. The Coffee Machine:
+// In your coffee shop application, you need to simulate the process of brewing coffee asynchronously. Write an async function named brewCoffee that takes the type of coffee and returns a promise. The promise should resolve with a message indicating that the coffee is ready after a random delay.
+function getRandomDelay(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+async function brewCoffeer(coffeetype) {
+    return new Promise((resolve) => {
+    let delay= getRandomDelay(1000,5000)
+      setTimeout(() => {
+        resolve("coffee is ready");
+      }, delay); 
+    });
+  }
+  
+  async function main() {
+    let b = await brewCoffeer("cappuccino");
+    console.log(b);
+  }
+  
+  main();
