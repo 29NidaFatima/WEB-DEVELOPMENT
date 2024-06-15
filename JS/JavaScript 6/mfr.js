@@ -1,5 +1,5 @@
 // ------MAPPING(creating new array by performing some operation on old array value/elements)----
-let arr=[1,13,5,7,11];
+// let arr=[1,13,5,7,11];
 // let newArr=[];
 // for (let index = 0; index < arr.length; index++) {
 //     const element = arr[index];
@@ -27,7 +27,7 @@ let arr=[1,13,5,7,11];
 // }
 // console.log(arr.filter(greaterThanSeven))
 //--------------REDUCE--------------
-const red =(a,b)=>{
-    return a*b
-} 
-console.log(arr.reduce(red))            
+// const red =(a,b)=>{
+//     return a*b
+// } 
+// console.log(arr.reduce(red))            

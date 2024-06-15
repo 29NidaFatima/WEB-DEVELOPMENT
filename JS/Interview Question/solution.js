@@ -160,21 +160,64 @@
   
 // 10. The Coffee Machine:
 // In your coffee shop application, you need to simulate the process of brewing coffee asynchronously. Write an async function named brewCoffee that takes the type of coffee and returns a promise. The promise should resolve with a message indicating that the coffee is ready after a random delay.
-function getRandomDelay(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-async function brewCoffeer(coffeetype) {
-    return new Promise((resolve) => {
-    let delay= getRandomDelay(1000,5000)
-      setTimeout(() => {
-        resolve("coffee is ready");
-      }, delay); 
-    });
+// function getRandomDelay(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   }
+// async function brewCoffeer(coffeetype) {
+//     return new Promise((resolve) => {
+//     let delay= getRandomDelay(1000,5000)
+//       setTimeout(() => {
+//         resolve("coffee is ready");
+//       }, delay); 
+//     });
+//   }
+  
+//   async function main() {
+//     let b = await brewCoffeer("cappuccino");
+//     console.log(b);
+//   }
+  
+//   main();
+// 11. The Array Filterer:
+//     You are building a search feature for your e-commerce site. Write a function named filterProducts that takes an array of product objects and a filter criterion. The function should return a new array containing only the products that match the filter criterion.
+// function filterProducts(products, criterion) {
+//   return products.filter(product => {
+//       for (let key in criterion) {
+//           if (product[key] !== criterion[key]) {
+//               return false;
+//           }
+//       }
+//       return true;
+//   });
+// }
+
+
+// const products = [
+//   { id: 1, name: 'Laptop', category: 'electronics', price: 999 },
+//   { id: 2, name: 'Shirt', category: 'clothing', price: 29 },
+//   { id: 3, name: 'Coffee Maker', category: 'kitchen', price: 49 },
+//   { id: 4, name: 'Smartphone', category: 'electronics', price: 699 },
+//   { id: 5, name: 'Blender', category: 'kitchen', price: 99 }
+// ];
+
+// const criterion = { category: 'electronics' };
+// const filteredProducts = filterProducts(products, criterion);
+// console.log(filteredProducts);
+// 13. The Shopping Cart Totalizer:
+    // You are working on an e-commerce website, and you need to calculate the total cost of items in the shopping cart. Implement a function named calculateTotal that takes an array of products with prices and quantities and returns the total cost.
+    function calculateTotal(cart) {
+      return cart.reduce((total, product) => {
+          return total + (product.price * product.quantity);
+      }, 0);
   }
   
-  async function main() {
-    let b = await brewCoffeer("cappuccino");
-    console.log(b);
-  }
+ 
+  const cart = [
+      { id: 1, name: 'Laptop', price: 999, quantity: 1 },
+      { id: 2, name: 'Shirt', price: 29, quantity: 3 },
+      { id: 3, name: 'Coffee Maker', price: 49, quantity: 2 }
+  ];
   
-  main();
+  const totalCost = calculateTotal(cart);
+  console.log(totalCost); // Output: 1154
+  
