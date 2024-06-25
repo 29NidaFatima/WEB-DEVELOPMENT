@@ -4,20 +4,17 @@
 }
 .left{
     width: 25vw;
+    padding: 10px;
 }
 .right{
     width: 75vw;
 }
 .home ul li{
+    list-style: none;
+    width: 14px;
     display: flex;
-    gap: 5px;
-     width: 14px;
-     list-style: none;
+    gap: 15px;
+    padding-top: 14px;
 }
-.bg-black{
-    background-color: black;
-    color: white;
-}
-.invert{
-    filter: invert(1);
-}
+
+
