@@ -75,7 +75,6 @@ h1 {
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
-  position: absolute;
   content: "";
   width: 30%;
   height: 2px;
@@ -84,3 +83,17 @@ h1 {
   bottom: -4px;
   left:20px; 
 } 
+/* Home Page */
+#hero{
+    background-image: url(assets/logo/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+  }
+}
