@@ -1,9 +1,9 @@
-console.log("JS")
+console.log("JS-VARIABLES AND DATATYPES")
 // let a=5;
 // let b=6;
 // let c="Nida";
 // let _d="Adiba";   Valid
-//var 55a="Rohan"    Invalid Way Not Allowed
+//var 55a="Rohan"    Invalid bcz its starts with number
 
 // { 
 //     // let -->BLOCK SCOPE
