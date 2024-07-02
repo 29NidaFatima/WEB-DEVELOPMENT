@@ -5,30 +5,34 @@ let a=1;
 // console.log(a+2)
 // console.log(a+3)
 // console.log(a+4)
-// ------for loop-----
-for (let i = 0; i < 100; i++) {
+// ------FOR LOOP-----
+// for (let i = 0; i < 100; i++) {
 
-    console.log(a+i);
-}
+//     console.log(a+i);
+// }
+// ------FOR IN LOOP-----
 // let obj={
 //      name:"Nida",
-//      role:"Programmer",
-//      company:"CodeWithHarry AI"
+//      role:"Developer",
+//      company:"AI"
 // }
 // for (const key in obj) {
 
 //   const element = obj[key]; 
-//         console.log( key)
+//         console.log( key,element)
 
 //     }
-//     for (const char of "Nida") {
-//         console.log(char)
-//     }
+    // ------FOR OF LOOP-----
+    // for (const char of "Nida") {
+    //     console.log(char)
+    // }
+    //WHILE LOOP
 // let i=0;
 // while (i<6) {
 //     console.log(i)
 //     i++;
 // }
+    // DO WHILE LOOP
 // let i=10;
 // do {
 //    console.log(i);

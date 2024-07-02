@@ -19,6 +19,7 @@
 //     c=obj[c]
 //     alert(`The Result is ${eval('${a} ${c} ${b}')}`);
 // }
+// ---------------------------------
 let random = Math.random();
 console.log(random);
 
