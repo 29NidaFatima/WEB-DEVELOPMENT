@@ -16,7 +16,8 @@ if (random > 0.1) {
     console.log(`The Result is ${a} ${c} ${b}`);
     let result = eval(`${a} ${c} ${b}`);
     alert(`The Result is ${result}`);
-} else {
+}
+else {
     c = obj[c];
     console.log(`The Result is ${a} ${c} ${b}`);
     let result = eval(`${a} ${c} ${b}`);
