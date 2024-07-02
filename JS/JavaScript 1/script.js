@@ -1,21 +1,20 @@
 console.log("JS-VARIABLES AND DATATYPES")
 // let a=5;
 // let b=6;
+// console.log(a+b+8)
 // let c="Nida";
+//-----how to check the type of any variable
+// console.log(typeof a,typeof b, typeof c)
+//HOW TO DECLARE VARIABLE
 // let _d="Adiba";   Valid
 //var 55a="Rohan"    Invalid bcz its starts with number
-
+//NOTE:var is global scope,Let and const are block scope
 // { 
-//     // let -->BLOCK SCOPE
 //     let b=66;
-
 //     console.log(b)
 // }
 // console.log(b)
 
-// console.log(a+b+8)
-//-----how to check the type of any variable
-// console.log(typeof a,typeof b, typeof c)
 
 // const a1=29; // value cannot change if once assign in const
 // a1 = a1 + 1;
@@ -29,13 +28,13 @@ let q = undefined;
 let r = null;
 console.log(x, y, z, p, q, r)
 console.log(typeof x, typeof y, typeof z, typeof p, typeof q, typeof r)
-let o = {
+let obj = {
     "name": "Nida",
     "job role": 5600,
     "is_handsome": true
 }
-console.log(o)
-o.salary = "100crores"
-console.log(o)
-o.salary = "500crores"
-console.log(o)
+console.log(obj)
+obj.salary = "100crores";
+console.log(obj)
+obj.salary = "500crores";
+console.log(obj)
