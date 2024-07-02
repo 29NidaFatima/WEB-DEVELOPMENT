@@ -1,4 +1,4 @@
-console.log(" Conditional Statements")
+console.log("Conditional Statements")
 // let age = 1;
 // let grace = 2;
 
