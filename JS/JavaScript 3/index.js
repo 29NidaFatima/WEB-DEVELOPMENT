@@ -1,15 +1,15 @@
-// console.log("Loops")
-// let a=1;
+console.log("LOOPS")
+let a=1;
 // console.log(a)
 // console.log(a+1)
 // console.log(a+2)
 // console.log(a+3)
 // console.log(a+4)
 // ------for loop-----
-// for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 100; i++) {
 
-//     console.log(a+i);
-// }
+    console.log(a+i);
+}
 // let obj={
 //      name:"Nida",
 //      role:"Programmer",
@@ -17,7 +17,7 @@
 // }
 // for (const key in obj) {
 
-//         // const element = obj[key]; 
+//   const element = obj[key]; 
 //         console.log( key)
 
 //     }
@@ -36,17 +36,17 @@
 // } while (i<6);
 // ------Practice Question------
 // Q2
-let marks={
-   harry: "98",
-   rohan:"70",
-   aakash:"7"
-}
-for (const key in marks) {
+// let marks={
+//    harry: "98",
+//    rohan:"70",
+//    aakash:"7"
+// }
+// for (const key in marks) {
 
-      const element = marks[key];
-      console.log(key,element)
+//       const element = marks[key];
+//       console.log(key,element)
 
-}
+// }
 // Q4
 // function mean(p, q, r, s) {
 //     return (p + q + r + s) / 5
